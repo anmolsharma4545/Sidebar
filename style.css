@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #a554f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: space-between;
+}
+.logo{
+    font-size: 2rem;
+    color: #fff;
+    margin: 10px auto;
+    font-weight: 300;
+}
+button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    margin-right: 20px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 1.3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+button:hover{
+    font-size: 2rem;
+}
+
+aside{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(49, 195, 221, 0.5);
+    display: grid;
+    place-content: center;
+    transition: all 0.5s ease;
+    transform: translateX(-2000px);
+}
+aside .links{
+    display: grid;
+    place-content: center;
+    width: 500px;
+    height: 300px;
+}
+aside .links li{
+    display: grid;
+    place-content: center;
+    list-style: none;
+    color: #333;
+    width: 260px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255,0.2);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+aside .social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside .social li{
+    display: grid;
+    place-content: center;
+    list-style: none;
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+   border-radius: 50%;
+   background-color: rgba(255, 255, 255, 0.2);
+}
+aside ul li:hover{
+    background-color: rgba(255, 255, 255,0.5);
+}
+
+.show-sidebar{
+    transform: translateX(0px);
+}
